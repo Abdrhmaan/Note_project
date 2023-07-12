@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <div class="conatiner">
+       <div class="not-arie">
+        <input type="text" id="title" class="title" placeholder="take a Node" autocomplete="off"> 
+        <textarea id="notetext" placeholder="note text" class="not-txt" rows="3" cols="30"></textarea>
+       </div>
+   
+       <div id="NOTES">
+       
+       <div class="note">
+       <h3 class="tee">Her</h3>
+       <p class="txxx">NoTE cOMENTE</p>
+       <i class='bx bxs-message-alt-x'></i>
+       </div>
+      
+    </div>
+
+
+    <script>
+        let notarie = document.querySelector(".not-arie")
+        console.log(notarie)
+        let title = document.querySelector("#title")
+        console.log(title)
+        let notText = document.querySelector(".not-txt")
+        console.log(notText)
+        let NOTES = document.querySelector("#NOTES")
+        console.log(NOTES)
+        let note = document.querySelector(".note")
+        console.log(note)
+
+        notarie.addEventListener("click" , shownotArie)
+
+        function shownotArie(){
+            notText.style = "display : block"
+            notText.classList.add("notnow")
+            title.setAttribute("placeholder",  'title')
+        }
+       
+        document.addEventListener("click", (event) => {
+
+          let isklicked =    notarie.contains(event.target)
+          if(!isklicked){
+            notText.style = "display : none"
+            notText.classList.remove("notnow")
+          }
+       
+
+           
+
+        })
+
+    </script>
+</body>
+</html>

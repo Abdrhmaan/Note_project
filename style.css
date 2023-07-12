@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conatiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+    padding: 20px;
+   
+}
+.not-arie {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0 ,0.4) ;
+    margin: 40px ;
+    padding: 10px;
+    border-radius: 10px;
+    width: 650px;
+}
+.title {
+   outline: none;
+   font-size: 15px;
+   display: block;
+    border: 0;
+   width: 100%;
+   padding: 10px;
+}
+.not-txt{
+ outline: none;
+ resize: none;
+ font-size: 15px;
+display: block;
+ margin-bottom: 10px;
+border: 0;
+ width: 100%;
+ padding: 20px 15px;
+display: none;
+}
+.notnow {
+    padding: 20px;
+}
+#NOTES {
+   
+    position: relative;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+
+    
+   
+}
+.note {
+   position: relative;
+   width: 270px;
+   border-radius: 5px;
+   padding: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0 ,0.4) ;
+
+}
+.tee{
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+.txxx{
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+.note i {
+    margin-top: 10px;
+    font-size: 30px;
+    transition: 0.5s;
+   
+    
+}
+.note i:hover{
+ transition: .5s;
+}
