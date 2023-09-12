@@ -3,85 +3,82 @@
     padding: 0;
     box-sizing: border-box;
 }
-.conatiner {
+.conatiner{
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    align-items: center;
     flex-direction: column;
-    padding: 20px;
-   
+    margin-bottom: 50px;
 }
 .not-arie {
+    width: 600px;
     background: #fff;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     justify-content: center;
+    border-radius: 4px;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0 ,0.4) ;
-    margin: 40px ;
-    padding: 10px;
-    border-radius: 10px;
-    width: 650px;
+     margin: 40px;
+
 }
 .title {
-   outline: none;
-   font-size: 15px;
-   display: block;
-    border: 0;
-   width: 100%;
-   padding: 10px;
-}
-.not-txt{
- outline: none;
- resize: none;
- font-size: 15px;
-display: block;
- margin-bottom: 10px;
-border: 0;
- width: 100%;
- padding: 20px 15px;
-display: none;
-}
-.notnow {
-    padding: 20px;
-}
-#NOTES {
-   
-    position: relative;
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-    align-items: center;
-
-    
-   
-}
-.note {
-   position: relative;
-   width: 270px;
-   border-radius: 5px;
-   padding: 10px;
-   box-shadow: 0 0 10px rgba(0, 0, 0 ,0.4) ;
-
-}
-.tee{
-    margin-bottom: 10px;
-    font-size: 20px;
+    display: block;
+    outline: none;
     padding: 10px;
-}
-.txxx{
-    margin-top: 10px;
-    word-wrap: break-word;
-}
-.note i {
-    margin-top: 10px;
-    font-size: 30px;
-    transition: 0.5s;
+    font-size: 15px;
+    border: 0;
+    width: 100%;
    
-    
 }
-.note i:hover{
- transition: .5s;
+.note-text {
+    display: block;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    border: 0;
+    width: 100%;
+    display: none;
+    margin-bottom: 10px;
+
+}
+.notes {
+    position: relative;
+   max-width: 1200px;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-gap: 30px;
+   align-items: center;
+}
+.node {
+    width: 270px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  vertical-align: middle;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+
+}
+.title-t {
+    font-size: 20px;
+    font-weight: 400;
+   
+}
+.blog {
+    word-wrap: break-word;
+    
+    font-size: 17px;
+}
+.node i{
+    display: none;
+}
+.node i.show {
+    position: relative;
+    top: 90%;
+    left: 90%;
+    color: cadetblue;
+    font-size: 30px;
+    display: block;
+
 }
